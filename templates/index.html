@@ -38,7 +38,7 @@ function place(val){
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById("b"+val).innerHTML = data.turn==1 ? "O" : "X";
+        document.getElementById("b"+val).innerHTML = data.turn==1 ? "X" : "O" ;
         if(data.winner){
             alert(data.winner + " wins!");
         }
